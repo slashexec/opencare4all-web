@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OpenCare4All - Occupational Health Management",
-  description: "Modern web application for occupational health management and medical campaigns",
+  title: "Cabinet Médical Santé et Travail Pour Tous - Gestion de la santé au travail",
+  description: "Plateforme numérique du Cabinet Médical Santé et Travail Pour Tous pour la gestion de la santé au travail et les campagnes médicales",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

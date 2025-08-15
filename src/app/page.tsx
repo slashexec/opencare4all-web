@@ -8,19 +8,23 @@ export default function Home() {
     <div className="container mx-auto px-4 py-16">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          OpenCare4All
+        <h1 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
+          Cabinet Médical
+          <br />
+          <span className="text-blue-600">Santé et Travail</span>
+          <br />
+          <span className="text-2xl font-medium text-gray-700">Pour Tous</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Modern occupational health management platform for medical campaigns, 
-          employee health tracking, and workplace wellness programs.
+          Plateforme moderne de gestion de la santé au travail pour les campagnes médicales, 
+          le suivi de la santé des employés et les programmes de bien-être au travail.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Button asChild size="lg">
-            <Link href="/auth/login">Get Started</Link>
+            <Link href="/auth/login">Commencer</Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <Link href="/dashboard">View Dashboard</Link>
+            <Link href="/dashboard">Voir le tableau de bord</Link>
           </Button>
         </div>
       </div>
@@ -31,15 +35,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span>🏢</span>
-              Organizations
+              Organisations
             </CardTitle>
             <CardDescription>
-              Manage company profiles and organizational structures
+              Gérer les profils d'entreprise et les structures organisationnelles
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600">
-              Comprehensive organization management with address tracking and campaign associations.
+              Gestion complète des organisations avec suivi des adresses et associations de campagnes.
             </p>
           </CardContent>
         </Card>
@@ -48,15 +52,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span>🎯</span>
-              Campaigns
+              Campagnes
             </CardTitle>
             <CardDescription>
-              Plan and execute medical health campaigns
+              Planifier et exécuter des campagnes de santé médicale
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600">
-              Create time-bound health campaigns with employee assignments and progress tracking.
+              Créer des campagnes de santé limitées dans le temps avec affectation d'employés et suivi des progrès.
             </p>
           </CardContent>
         </Card>
@@ -65,15 +69,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span>👥</span>
-              Employees
+              Employés
             </CardTitle>
             <CardDescription>
-              Track employee health and medical records
+              Suivre la santé des employés et les dossiers médicaux
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600">
-              FHIR-compliant employee health records with OpenMRS integration.
+              Dossiers de santé des employés conformes FHIR avec intégration OpenMRS.
             </p>
           </CardContent>
         </Card>
@@ -82,15 +86,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span>🔧</span>
-              Workstations
+              Postes de travail
             </CardTitle>
             <CardDescription>
-              Manage workplace environments and risks
+              Gérer les environnements de travail et les risques
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600">
-              Track professional risks and workplace conditions for occupational health.
+              Suivre les risques professionnels et les conditions de travail pour la santé au travail.
             </p>
           </CardContent>
         </Card>
@@ -99,15 +103,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span>🔒</span>
-              Security
+              Sécurité
             </CardTitle>
             <CardDescription>
-              Enterprise-grade security and compliance
+              Sécurité et conformité de niveau entreprise
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600">
-              JWT authentication, role-based access control, and FHIR compliance.
+              Authentification JWT, contrôle d'accès basé sur les rôles et conformité FHIR.
             </p>
           </CardContent>
         </Card>
@@ -116,15 +120,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span>📊</span>
-              Analytics
+              Analyses
             </CardTitle>
             <CardDescription>
-              Health insights and reporting
+              Analyses de santé et rapports
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600">
-              Coming soon: Advanced analytics and health trend reporting.
+              Bientôt disponible : analyses avancées et rapports de tendances de santé.
             </p>
           </CardContent>
         </Card>
@@ -132,11 +136,11 @@ export default function Home() {
 
       {/* Status Section */}
       <div className="text-center">
-        <h2 className="text-2xl font-semibold mb-4">System Status</h2>
+        <h2 className="text-2xl font-semibold mb-4">État du système</h2>
         <div className="flex gap-2 justify-center flex-wrap">
-          <Badge variant="default">Backend API Ready</Badge>
-          <Badge variant="secondary">Frontend In Development</Badge>
-          <Badge variant="outline">FHIR Compatible</Badge>
+          <Badge variant="default">API Backend prête</Badge>
+          <Badge variant="secondary">Frontend en développement</Badge>
+          <Badge variant="outline">Compatible FHIR</Badge>
         </div>
       </div>
     </div>
